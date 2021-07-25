@@ -24,5 +24,5 @@ let toggleAnswers = function(e){
 
 let answersContainer = document.getElementsByClassName('question');
 
-toggleAnswers(answersContainer[1]);
+// toggleAnswers(answersContainer[1]);
 
