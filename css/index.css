@@ -65,6 +65,9 @@ li{
     cursor: pointer;
     margin-bottom: 0;
 }
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
 .selected-question{
     font-weight: 700;
 }
@@ -110,7 +113,7 @@ li{
         display: flex;
         min-width: 57.5rem;
         padding: 0 0 3rem 0;
-        background-image: url('/images/illustration-woman-online-desktop.svg'), url('/images/bg-pattern-desktop.svg');
+        background-image: url('../images/illustration-woman-online-desktop.svg'), url('../images/bg-pattern-desktop.svg');
         background-position-x: -5.3rem, -36.1rem;
         background-position-y: 4.3rem, -18.5rem;
         background-repeat: no-repeat, no-repeat;
