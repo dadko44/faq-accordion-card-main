@@ -1,4 +1,3 @@
-
 let animateArrow = function(arrowElement, activate){
     if(activate){
         arrowElement.style.transform = 'rotate(180deg)';
@@ -22,4 +21,8 @@ let toggleAnswers = function(e){
         answerElement.style.margin = '0.7rem 0 1rem 0';
     }
 }
+
+let answersContainer = document.getElementsByClassName('question');
+
+// toggleAnswers(answersContainer[1]);
 

@@ -1,23 +1,23 @@
 body{
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 48rem;
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     padding-top: 1.7rem;
-    padding: 2rem  0 0 1rem;
+    padding: 1rem  0 0 0;
 }
 h1{
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
-    margin-top: 7.5rem;
     margin-bottom: 2rem;
     padding-left: 1.5rem;
 }
 h2{
-    max-width: 270px;
+    max-width: 16,875rem;
     font-weight: 400;
     font-size: 0.8rem;
 }
@@ -28,14 +28,15 @@ ul{
 }
 li{
     margin-top: 1.3rem;
-    max-width: 280px;
+    max-width: 17.5rem;
     position: relative;
     border-bottom: thin solid hsl(240, 5%, 91%);
 }
 .graphics-wrapper{
     position: relative;
+    margin-bottom: 7rem;
 }
-.illustration-woman{
+.illustration-woman-mobile{
     position: absolute;
     top: -7.75rem;
     left: 1rem;
@@ -44,6 +45,9 @@ li{
     position: absolute;
     top: -1rem;
     left: 3rem;
+}
+.illustration-box-desktop{
+    display: none;
 }
 .main-centering-wrapper{
     margin: auto;
@@ -77,20 +81,67 @@ li{
 }
 .arrow-icon{
     transition: transform 0.5s;
-    /* transform: rotate(180deg); */
     position: absolute;
     right: 0rem;
     top: 0.1rem;
 }
 
 
+@media (min-width: 65rem){
+    body{
+        padding-left: 2.8rem;
+        padding-top: 0rem;
+    }
+    h1{
+        margin-top: 4rem;
+        margin-bottom: 2.5rem;
+        text-align: start;
+    }
+    h2{
+        font-size: 0.88rem;
+    }
+    li{
+        max-width: 21rem;
+    }
+    p{
+        margin: 0.3rem 0 0.3rem 0;
+    }
+    .main-centering-wrapper{
+        display: flex;
+        min-width: 57.5rem;
+        padding: 0 0 3rem 0;
+        background-image: url('/images/illustration-woman-online-desktop.svg'), url('/images/bg-pattern-desktop.svg');
+        background-position-x: -5.3rem, -36.1rem;
+        background-position-y: 4.3rem, -18.5rem;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .graphics-wrapper{
+        min-width: 28rem;
+        margin: 0;
+    }
+    .illustration-woman-mobile{
+        display: none;
+    }
+    .illustration-shadow-mobile{
+        display: none;
+    }
+    .illustration-box-desktop{
+        position: absolute;
+        display: initial;
+        left: -5.85rem;
+        top: 13rem;
+        filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.3));
+    }
+    .answer{
+        font-size: 0.7rem;
+    }
+}
 
-
-/* .attribution { 
-    margin: auto;
-    bottom: 1rem;
-    font-size: 11px; text-align: center;
-    color: hsl(228, 45%, 44%); 
-} */
+.attribution { 
+    position: relative;
+    bottom: 3rem;
+    font-size: 1rem; text-align: center;
+    color: hsl(228, 59%, 81%); 
+}
 
 
